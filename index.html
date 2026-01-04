@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Eyad Ayman's Portfolio</title>
+    <link rel="icon" href="images/head_logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-red.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  />
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- home function -->
+    <div id="header">
+        <div class="container box">
+            <nav>
+                <img src="images/Eyad_logo.png" class="logo" width="250px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Experiences">Experiences</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+
+             <!-- Theme Toggle Button -->
+<div class="btn-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" fill="Red" class="bi bi-yin-yang" viewBox="0 0 16 16">
+        <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0"/>
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7m7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334"/>
+      </svg>
+    <label class="switch btn-color-mode-switch">
+        <input type="checkbox" id="color_mode" name="color_mode" onclick="toggleTheme()">
+        <label class="btn-color-mode-switch-inner" data-off="Red" data-on="Blue" for="color_mode"></label>
+    </label>
+    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" fill="Blue" class="bi bi-yin-yang" viewBox="0 0 16 16">
+        <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0"/>
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7m7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334"/>
+      </svg>
+      
+</div>
+
+<!-- JavaScript for Theme Toggle -->
+<script>
+    function toggleTheme() {
+        let currentUrl = window.location.href;
+        let newUrl = "";
+
+        if (currentUrl.includes("index.html")) {
+            newUrl = currentUrl.replace("index.html", "index-blue.html");
+            localStorage.setItem("theme", "Red");
+        } else if (currentUrl.includes("index-blue.html")) {
+            newUrl = currentUrl.replace("index-blue.html", "index.html");
+            localStorage.setItem("theme", "Blue");
+        } else {
+            // Default case: Go to index.html
+            newUrl = "index.html";
+            localStorage.setItem("theme", "Blue");
+        }
+
+        window.location.href = newUrl;
+    }
+
+    // Set initial state of checkbox based on localStorage
+    document.addEventListener("DOMContentLoaded", function() {
+        let theme = localStorage.getItem("theme");
+        let checkbox = document.getElementById("color_mode");
+
+        if (theme === "Red") {
+            checkbox.checked = true;
+        } else {
+            checkbox.checked = false;
+        }
+    });
+</script>
+
+
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <div class="loader  animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="loaader  animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="setdiv  animate__animated animate__slideInUp">
+                    <h2>Hi, I'm <br></h2>
+                    <h1><span>Eyad Ayman<br>Mohamed</span></h1>
+                    <p>Software Developer 💻 - Web Designer 🧑‍💻 - UI/UX 🧡🔥</p>
+                    <div class="wrapper">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="notification"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1nf-GsGo0MrRUgn_6xjvhlnmymZJFpqsA/view?usp=sharing';">
+                <p>Would you like to check my CV ?😊</p>
+                <span class="notification__progress"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Section-Home/menu.js"></script>
+
+    <!-- home function -->
+
+    <div id="progress">
+        <span id="progress-value" class="gotoTop">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z" />
+            </svg>
+        </span>
+    </div>
+    <script src="Section-Home/Scroll-Top.js"></script>
+
+
+    <!-- about section -->
+    <div id="about">
+        <div class="containers box">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="sub-line">
+                        <p>
+                            A front-end developer with 3+ years of experience building responsive, high-performance web interfaces using HTML, CSS, and JavaScript. I create seamless user experiences that align with modern standards and business goals.  
+
+Skilled in UI/UX design with expertise in Figma, transforming complex ideas into intuitive, user-friendly interfaces.  
+
+Strong programming background in C++ and C#, with a deep understanding of OOP for developing efficient and scalable solutions.  
+
+Experienced in building fast, SEO-optimized websites and managing databases using Microsoft SQL Server for reliable data handling.  
+
+A problem solver with a keen eye for detail, ensuring tailored solutions that meet client needs. Excellent collaboration and communication skills to align projects with business objectives.
+                        </p>
+                    </div>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('others')">Others</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages<br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white">
+                                    <img
+                                        src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white">
+                                    
+                                </div>
+                            </li>
+                            
+                            <li><span>Web Development<br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff">
+                                    <img
+                                        src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000">
+                                </div>
+                            </li>
+                            <li><span>UI/UX<br></span>
+                                <div class="space1">
+                                    
+                                    <img
+                                        src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white">
+                                        <img
+                                        src="https://img.shields.io/badge/Photoshop-F24E1E?logo=Phtoshop&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Code Compilers<br></span>
+                                <div class="space1">
+                                    
+                                        <img
+                                        src="https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white">
+                                        <img
+                                        src="https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span> Version Control <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff">
+                                    <img
+                                        src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="others">
+                        <ul>
+                            
+                            <li><span>Framework & package managers <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff">
+                                        <img
+                                        src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff">
+                                    <img
+                                        src="https://img.shields.io/badge/NuGet-004880?logo=nuget&logoColor=fff">
+                                </div>
+                            <li><span>Database Management <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927">
+                                        <img
+                                        src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white">
+                                    
+                                </div>
+                            </li>
+                            <li><span>Professional Tools<br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=fff">
+                                        <img
+                                        src="https://img.shields.io/badge/ChatGPT-74aa9c?logo=openai&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Software Development<br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/OOP & Solid-%2300599C.svg?style=for-the-badge&logo=OOP & Solid&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Data Structure & Algorithm-%23E34F26.svg?style=for-the-badge&logo=Data Structure & Algorithm&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/problem-solving-0078d7.svg?style=for-the-badge&logo=problem-solving&logoColor=white">
+                                        <img
+                                        src="https://img.shields.io/badge/REST API'S-0078d7.svg?style=for-the-badge&logo=REST API'S&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Responsive & Adaptive UI-%2300599C.svg?style=for-the-badge&logo=Responsive&Adaptive UI&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Clean-Code-%23E34F26.svg?style=for-the-badge&logo=Clean Code&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Dependcy-Injection-0078d7.svg?style=for-the-badge&logo=Dependcy-Injection&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Design-Patterns-%2300599C.svg?style=for-the-badge&logo=Design-Patterns&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="Education"><b>Software Development</b> </span><br>
+                                <p>EVA International Applied Technology School </p>
+                                <p>Software, Programming & IT Major. </p>
+                                <p align="left">2023 - Present</p>
+                            </li><br>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="Education"><b>Check Out My CV & Hire Me</b> </span><br>
+                                <p></p>
+                                <button class="button"
+                                    onclick="window.location.href = 'https://drive.google.com/file/d/1nf-GsGo0MrRUgn_6xjvhlnmymZJFpqsA/view?usp=sharing';">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Download Now</span>
+                                    </span>
+                                </button>
+                                <button class="button"
+        onclick="window.location.href = 'https://mostaql.com/u/Eyad_Ayman1';">
+        <span class="button_lg">
+            <span class="button_sl"></span>
+            <span class="button_text">Hire Me ❤️</span>
+        </span>
+                            </li><br>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="images/me.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <!-- about section -->
+<!-- Skill section -->
+
+<h1 class="h1s box">My Skills</h1>
+    <br>
+    <div class="process-wrapperd box">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">Languages</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">Frontend Development</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">Backend Development</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">Frameworks</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">Others</div>
+                </li>
+            </ul>
+
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded c++">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C++</div>
+                        </div>
+
+                        <div class="carded Flutter">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Flutter</div>
+                        </div>
+
+                        <div class="carded python">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Python</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Programming Languages</h2>
+            </div>
+
+            <div class="section-content strategy">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded">
+                            <div class="circled html">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">HTML</div>
+                        </div>
+
+                        <div class="carded css">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">CSS</div>
+                        </div>
+
+                        <div class="carded javascript">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Frontend Web Development Skills</h2>
+            </div>
+
+            <div class="section-content creative">
+                <div class="skills">
+                    <div class="wrapperd">
+                        
+                        <div class="carded c">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C#</div>
+                        </div>
+                        
+                        <div class="carded sql">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">SQL</div>
+                        </div>
+
+                        <div class="carded php">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">PHP</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h2>Backend Web Development Skills</h2>
+            </div>
+
+            <div class="section-content production">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded net">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">ASP.Net</div>
+                        </div>
+
+                        <div class="carded bs">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Bootstrap</div>
+                        </div>
+                        <div class="carded laravel">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Laravel</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Frameworks</h2>
+            </div>
+
+            <div class="section-content analysis">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded git">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Git & GitHub</div>
+                        </div>
+
+                        <div class="carded agile">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Agile</div>
+                        </div>
+                        <div class="carded figma">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Figma & UI/UX Design</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Designing and Collaboration Skills</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        let optionse = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.95,
+            fill: { gradient: ["#526D82", "rgb(2, 6, 48)"] },
+        };
+        $(".circled .bar")
+            .circleProgress(optionse)
+            .on("circle-animation-progress", function (event, progress, stepValue) {
+                $(this)
+                    .parent()
+                    .find("span")
+                    .text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $("c++ .bar").circleProgress({
+            value: 0.90,
+        });
+        $(".html .bar").circleProgress({
+            value: 0.95,
+        });
+        $(".css .bar").circleProgress({
+            value: 0.90,
+        });
+        $(".javascript .bar").circleProgress({
+            value: 0.30,
+        });
+        $(".c .bar").circleProgress({
+            value: 0.85,
+        });
+        $(".sql .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".php .bar").circleProgress({
+            value: 0.20,
+        });
+        $(".laravel .bar").circleProgress({
+            value: 0.25,
+        });
+        $(".bs .bar").circleProgress({
+            value: 0.85,
+        });
+        $(".net .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".git .bar").circleProgress({
+            value: 0.70,
+        });
+        $(".agile .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".figma .bar").circleProgress({
+            value: 0.85,
+        });
+        $(".python .bar").circleProgress({
+            value: 0.40,
+        });
+        $(".Flutter .bar").circleProgress({
+            value: 0.25,
+        });
+        $(".ccc .bar").circleProgress({
+            value: 0.90,
+        });
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+
+
+<!-- skill section -->
+
+    <!-- Projects section -->
+    <div id="projects">
+        <div class="containers box">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <div class="card" onclick="window.location.href = 'https://www.figma.com/file/beERPbTPaFdhs6Zmo8CRJU/Untitled?type=design&node-id=5%3A11&mode=design&t=pqgLHnHPLAzoPPap-1';">
+                        <div class="card7">
+                            <div class="position">
+                                <img align="center" class="icon" src="images/taibat.png" width="190">
+                                <span class="p_hcccolor">Taibet Alkhair</span>
+                                <p>
+                                    -user interface for a real estate company website 
+                                </p>
+                                <p align="right"><i><span class="p_color">Figma</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div>
+                <div class="card" onclick="window.location.href = 'https://eaey.github.io/EVA-School-IATS/';">
+                    <div class="card8">
+                        <div class="position">
+                            <img align="center" class="icon" src="images/school.png" width="190">
+                            <span class="p_hcccolor">EVA School's Website</span>
+                            <p>
+                                -  Official website for EVA International Applied School 
+                            </p>
+                            <p align="right"><i><span class="p_color">Website</span></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="window.location.href = 'https://www.figma.com/file/WJIm70Qlw6ZxotPohckFVn/UI-Design-for-Medicine-Store-(Community)?type=design&node-id=0%3A1&mode=design&t=iGcgBdV3fMLUNZPn-1';">
+                    <div class="card5">
+                        <div class="position">
+                            <img align="center" class="icon" src="images/pharma_shop.png" width="190">
+                            <span class="p_hcolor">Pharma Shop</span>
+                            <p>
+                                UI for Eva Company for selling medicines and nutritional supplements.
+                            </p>
+                            <p align="right"><i><span class="p_color">Figma</span></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="window.location.href = 'https://www.figma.com/file/D1Vz1B6M6FnClYJJoYC9Ah/Capstone-Final?type=design&node-id=201%3A977&mode=design&t=iGcgBdV3fMLUNZPn-1';">
+                    <div class="card4">
+                        <div class="position">
+                            <img align="center" class="icon" src="images/medical_rep.png" width="190">
+                            <span class="p_hcccolor">Medical Rep. Helper</span>
+                            <p>
+                                UI for Eva Pharma & Eva Cosmetics for the medical representatives.                                 </p>
+                            </p>
+                            <p align="right"><i><span class="p_color">Figma</span></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card" onclick="window.location.href = 'https://eaey.github.io/ChaiGPT/';">
+                    <div class="card5">
+                        <div class="position">
+                            <img align="center" class="icon" src="./images/olova.png" width="190">
+                            <span class="p_hcolor">ChaiGPT</span>
+                            <p>
+                                Design and development of a Chatbot with an Arabic interface and file upload support.
+                            </p>
+                            <p align="right"><i><span class="p_color">Website</span></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card" onclick="window.location.href = 'https://eaey.github.io/SafeCycle/';">
+                    <div class="card5">
+                        <div class="position">
+                            <img align="center" class="icon" src="./images/SafeCycle.png" width="190">
+                            <span class="p_hcolor">SafeCycle</span>
+                            <p>
+                                SafeCycle is a system for the tracking and maintenance of factory equipment and inventory.                            </p>
+                            <p align="right"><i><span class="p_color">Website</span></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Projects section !-->
+
+<!--experience-->
+
+<div id="Experiences" class="box">
+    <h1 class="sub-projects">Experiences</h1>
+    <div class="achievement1">
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/EvaSchool.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">EVA School</h2>
+                <p class="description"> EVA sets itself apart with a range of features that enhance the learning experience and foster the comprehensive and diverse development of students. 
+                    <br>
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href = 'https://www.facebook.com/share/p/18vje91Tuv/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/mostaql.png" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">My first client as a freelancer</h2>
+                <p class="description"> How was I able to get my first client, what was my school’s role in this, and what was my feeling at the time?
+                    <br>
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href = 'https://www.facebook.com/share/p/1He56W5gBQ/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+                <button class="button"
+                    onclick="window.location.href = 'https://mostaql.com/u/Eyad_Ayman1';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Hire Me ❤️</span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+        
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/edu.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">Edu Tech</h2>
+                <p class="description"> The international fair and forum for technical, dual-system education and vocational training.
+                    <br>
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href = 'https://www.facebook.com/share/p/1BKwXEqdbH/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+    </div>
+    <div class="achievement1">
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/nu.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">NU E-Club </h2>
+                <p class="description"> E-gnite Bootcamp Event  Organized by NU E-Club in Nile University, its about Skills Enhancment, Networking Opportunities and Creative Brainstorming ,
+                learned a lot about entrepreneurship and business.
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href = 'https://www.facebook.com/share/p/1615MxWZBJ/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/gdg.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">GDGC (DEV FEST)</h2>
+                <p class="description"> DevFest is an annual tech conference for developers, hosted by Google Developer Groups all over the world. This year's focus on Responsible AI couldn't be more timely.
+                    <br>
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href = 'https://www.facebook.com/share/p/15qpeTDuWH/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+        
+        <div class="card12">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="images/dsc.jpg" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name">Developer Student Clubs</h2>
+                <p class="description"> An Event Organizer of Formerly GDSC and currently DSC
+                 on Cairo University are university-based community club for students interested in various technology fields.
+                    <br>
+
+                </p>
+                <button class="button"
+                    onclick="window.location.href= 'https://www.facebook.com/share/v/1AAaWVbh6Z/';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">read more </span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+    </div>
+    
+    <!--add here more achivements-->
+</div>   
+
+
+   <div id="contactme" class="box">
+        <section class="contact hidden">
+            <div class="contact-form">
+                <h1>Contact <span class="us">Me</span>
+                </h1>
+                
+                <p>I'm currently available for new opportunities. Feel free to reach out and connect with me to discuss potential collaborations.</p>
+                
+                <form action="https://formspree.io/f/movjnylv" method="POST">
+                    <input type="name" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="" placeholder="Your E-mail" required>
+                    <input type="subject" placeholder="Your Subject of this message" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+
+            </div>
+            <div class="contact-img">
+                <img class="check" src="images/form.jpg">
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- contact me -->
+
+
+    <div class="Social box">
+        <div class="wrappeer">
+            <div class="icon facebook" onclick="window.location.href = 'https://www.facebook.com/Eyad311ayman';">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i> </span>
+            </div>
+            <div class="icon instagram" onclick="window.location.href = 'https://www.instagram.com/evad_fouad/';">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i> </span>
+            </div>
+            <div class="icon linkedin"
+            onclick="window.location.href = 'https://www.linkedin.com/in/eyad-ayman-32a9272aa/';">
+            <div class="tooltip">Linkedin</div>
+            <span><i class="fab fa-linkedin"></i> </span>
+        </div>
+
+            <div class="icon github" onclick="window.location.href = 'https://github.com/EAEY';">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i> </span>
+            </div>
+            
+            
+            <div class="icon whatsapp"
+                onclick="window.location.href = 'https://api.whatsapp.com/send?phone=201022914719';">
+                <div class="tooltip">whatsapp</div>
+                <span><i class="fab fa-whatsapp"></i> </span>
+            </div>
+
+        </div>
+
+        <div class="cv box">
+            
+            <button class="button"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1nf-GsGo0MrRUgn_6xjvhlnmymZJFpqsA/view?usp=sharing';">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download My CV</span>
+                </span>
+            </button>
+        </div>
+        <button class="button"
+        onclick="window.location.href = 'https://mostaql.com/u/Eyad_Ayman1';">
+        <span class="button_lg">
+            <span class="button_sl"></span>
+            <span class="button_text">Hire Me ❤️</span>
+        </span>
+    </div>
+
+
+    <div class="follower box">
+        <div class="wrapperpp">
+            <div class="containerpp">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="num" data-val="600">000</span>
+                <span class="text">Facebook Followers</span>
+            </div> 
+            <div class="containerpp">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="num" data-val="450">000</span>
+                <span class="text">Instagram Followers</span>
+            </div>
+            <div class="containerpp">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="num" data-val="300">000</span>
+                <span class="text">LinkedIn Connections</span>
+            </div>
+            <div class="containerpp ">
+                <i class="fa-brands fa-github"></i>
+                <span class="num" data-val="12">0</span>
+                <span class="text">Github repositories</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="Section-Home/animation.js"></script>
+
+    <div class="end">
+        <p>© 2025 Eyad Ayman. All rights reserved.</p>
+    </div>
+</body>
+</html>
